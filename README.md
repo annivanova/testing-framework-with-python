@@ -1,2 +1,2 @@
 # testing-framework-with-python
- this was assignment for an automation with python course I took 
+ this was assignment for an automation with python course I took and this is only the functionality I automated 
