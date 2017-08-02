@@ -8,10 +8,6 @@ locators_home_page = {'loc_departments': 'Departments',
                       'home_page_title': '#pane2 div.pane2-meta div',
                       'loc_homepage_logo': 'h1 .app-logo'
                       }
-locators_login_page = {'loc_login_user': '#user_email',
-                       'loc_login_pass': '#user_password',
-                       'loc_login_butt': '.btn-login',
-                       'loc_login_title': '.app-logo-login'}
 
 locators_oauth_page = {'oauth_title':'/html/body/div[2]/div[1]/ul[2]/li[8]/a',
                       'add_title':'//*[@id="pane2"]/div[1]/div',
