@@ -6,7 +6,7 @@ from Util.locators import locators_home_page
 
 
 class BasePage:
-    """This is the super class of all pages, all pages inherit from it"""
+  
 
     def __init__(self, driver):
         self.driver = driver
@@ -28,4 +28,4 @@ class BasePage:
 
 
 class InvalidPageException(Exception):
-    """Throw this exception when you don't find the correct page"""
+  
