@@ -4,10 +4,8 @@ from abc import abstractmethod
 from Util.AjaxHelper import AjaxHelper
 from Util.locators import locators_home_page
 
-
 class BasePage:
   
-
     def __init__(self, driver):
         self.driver = driver
         self._validate_page()
