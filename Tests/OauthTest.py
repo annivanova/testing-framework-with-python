@@ -40,7 +40,7 @@ class OauthTest(BaseTest):
     def test_form(self):
 
         login_user = LoginPage(self.driver)
-        home_page = login_user.log_in_with_user('admin@fluxday.io', 'password')
+        home_page = login_user.log_in_with_user('admin@fluxday.io', '')
 
         oauth = HomePage(self.driver)
         self.driver.implicitly_wait(10)
@@ -54,7 +54,7 @@ class OauthTest(BaseTest):
         self.driver.implicitly_wait(10)
         field_name.filling_name('peter')
         url_name=OuathPage(self.driver)
-        url_name.filling_url_field('https://en.wikipedia.org/wiki/OAuth')
+        url_name.filling_url_field(' ')
         save_form=OuathPage(self.driver)
         save_form.save_form()
         msg_alert=OuathPage(self.driver)
@@ -65,7 +65,7 @@ class OauthTest(BaseTest):
     def test_settings_btn(self):
 
         login_user = LoginPage(self.driver)
-        home_page = login_user.log_in_with_user('admin@fluxday.io', 'password')
+        home_page = login_user.log_in_with_user('admin@fluxday.io', '')
 
         oauth = HomePage(self.driver)
         self.driver.implicitly_wait(10)
@@ -80,7 +80,7 @@ class OauthTest(BaseTest):
         self.driver.implicitly_wait(10)
         field_name.filling_name('peter')
         url_name = OuathPage(self.driver)
-        url_name.filling_url_field('https://en.wikipedia.org/wiki/OAuth')
+        url_name.filling_url_field(' ')
         save_form = OuathPage(self.driver)
         save_form.save_form()
         msg_alert = OuathPage(self.driver)
@@ -96,7 +96,7 @@ class OauthTest(BaseTest):
     def test_cancel_btn(self):
 
         login_user = LoginPage(self.driver)
-        home_page = login_user.log_in_with_user('admin@fluxday.io', 'password')
+        home_page = login_user.log_in_with_user('admin@fluxday.io', ' ')
 
         oauth = HomePage(self.driver)
         self.driver.implicitly_wait(10)
