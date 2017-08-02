@@ -7,11 +7,7 @@ class HomePage(BasePage):
     def __init__(self, driver):
         super(HomePage, self).__init__(driver)
 
-
-    # @property
-    # def get_user_link(self):
-    #     return self.driver.find_element_by_xpath(locators_home_page['loc_homepage_user'])
-
+    @property
     def logged_user(self, user):
         if self.driver.find_element_by_link_text(user):
             return True
